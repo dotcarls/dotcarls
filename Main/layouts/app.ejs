@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= settings.title %></title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel='stylesheet' href='/css/bootstrap.min.css' />
+    
+  </head>
+  <body>
+    
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+         <% routes.forEach(function(route) { %>
+           <% if(route.paths[1]) { %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <%= route.name %>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <% route.paths.forEach(function(path) { %>
+                  <li><a href="<%= path.path %>"><%= path.navname %></a></li>
+                <% }) %> 
+              </ul>
+            </li>
+             
+           <% } else { %>
+            <li><a href="<%= route.paths[0].path %>"><%= route.paths[0].navname %></a></li>
+           <% } %>
+         <% }) %>
+         
+        </ul>
+        <h3 class="muted"><%= settings.title %></h3>
+      </div>
+      <% if (typeof jumbotron == 'undefined') { %>
+        <div class="row-fluid">
+          <% if (typeof content == 'undefined') { %>
+            <p class="error">No content found.</p>
+          <% } else { %>
+            <p class="lead"><%- content %></p>
+          <% } %>
+        </div>
+      <% } else { %>
+        <div class="jumbotron">
+          <% if (typeof content == 'undefined') { %>
+            <p class="error">No content found.</p>
+          <% } else { %>
+            <p class="lead"><%- content %></p>
+          <% } %>
+        </div> 
+      <% } %>
+      
+      <div class="footer">
+        <p>&copy; <%= settings.title %></p>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/holder.js"></script>
+    <script type="text/javascript" src="/js/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+  </body>
+</html>
