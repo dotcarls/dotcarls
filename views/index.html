@@ -1,36 +1,121 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Tim Carlson</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal website for Tim Carlson">
+    <meta name="author" content="Tim Carlson <dotcarls@indiana.edu>">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Welcome!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo">
-            <svg width="400" height="400">
-                <clipPath id="cut-off-left-side">
-                    <rect x="0" y="0" width="200" height="400" />
-                </clipPath>
-                <clipPath id="cut-off-right-side">
-                    <rect x="200" y="0" width="200" height="400" />
-                </clipPath>
-                <circle class="c" cx="200" cy="200" r="150" stroke="black" stroke-width="20" fill="white" clip-path="url(#cut-off-right-side)" />
-                <circle class="d" cx="200" cy="200" r="150" stroke="black" stroke-width="20" fill="white" clip-path="url(#cut-off-left-side)" />
-                <rect class="d" x="190" y="45" width="20" height="310" />
-                <rect x="40" y="45" width="20" height="310" />
-                <rect x="340" y="45" width="20" height="310" />
-                <rect x="0" y="40" width="400" height="20" />
-                <rect x="0" y="340" width="400" height="20" />
-            </svg>
-            <div id="titlediv" class="fulljustify">
-                DONALD TIMMS CARLSON III
+
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <div class="logo masthead-brand">
+                            <svg width="400" height="400">
+                                <clipPath id="cut-off-left-side">
+                                    <rect x="0" y="0" width="200" height="400" />
+                                </clipPath>
+                                <clipPath id="cut-off-right-side">
+                                    <rect x="200" y="0" width="200" height="400" />
+                                </clipPath>
+                                <circle class="c" cx="200" cy="200" r="150" stroke="white" stroke-width="20" fill="none" clip-path="url(#cut-off-right-side)" />
+                                <circle class="d" cx="200" cy="200" r="150" stroke="white" stroke-width="20" fill="none" clip-path="url(#cut-off-left-side)" />
+                                <rect class="d" x="190" y="45" width="20" height="310" fill="white" />
+                                <rect x="40" y="45" width="20" height="310" fill="white" />
+                                <rect x="340" y="45" width="20" height="310" fill="white" />
+                                <rect x="0" y="40" width="400" height="20" fill="white" />
+                                <rect x="0" y="340" width="400" height="20" fill="white" />
+                            </svg>
+                            
+                           
+                        </div>
+                        <h3 class="masthead-brand"> &nbsp; Tim Carlson</h3>
+                        <ul class="nav masthead-nav">
+
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Showcase</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <div class="logo">
+                        <svg width="400" height="400">
+                            <clipPath id="cut-off-left-side">
+                                <rect x="0" y="0" width="200" height="400" />
+                            </clipPath>
+                            <clipPath id="cut-off-right-side">
+                                <rect x="200" y="0" width="200" height="400" />
+                            </clipPath>
+                            <circle class="c" cx="200" cy="200" r="150" stroke="white" stroke-width="20" fill="none" clip-path="url(#cut-off-right-side)" />
+                            <circle class="d" cx="200" cy="200" r="150" stroke="white" stroke-width="20" fill="none" clip-path="url(#cut-off-left-side)" />
+                            <rect class="d" x="190" y="45" width="20" height="310" fill="white" />
+                            <rect x="40" y="45" width="20" height="310" fill="white" />
+                            <rect x="340" y="45" width="20" height="310" fill="white" />
+                            <rect x="0" y="40" width="400" height="20" fill="white" />
+                            <rect x="0" y="340" width="400" height="20" fill="white" />
+                        </svg>
+                        <div id="title-div" class="full-justify">
+                            DONALD TIMMS CARLSON III
+                        </div>
+                    </div>
+                    <h3>Welcome.</h3>
+                    <p class="intro-text fulljustify">
+                        My name is Tim Carlson. I'm a CS undergrad at Indiana University. Pls hire me.
+                    </p>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        © 2014 Tim Carlson
+                    </div>
+                </div>
+
             </div>
+
         </div>
+
     </div>
-    <script src=""></script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
 </body>
 
 </html>
