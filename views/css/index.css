@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+.logo {
+    width: 400px;
+    height: 450px;
+    margin: 0px auto;
+    zoom: .5;
+}
+
+.container {
+    width: 100%;
+}
+
+#titlediv {
+    position: relative;
+    width: 400px;
+    font-size: 28px;
+    bottom: 35px;
+    font-family: 'Lato', 'sans-serif';
+}
+.fulljustify {
+    text-align: justify;
+}
+.fulljustify:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}

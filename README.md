@@ -1,8 +1,7 @@
-CSCMS
+DOTCARLS
 =====
 
-#CSCI-A348 Semeseter Project Application
+#Personal Website for Tim Carlson
 
-Run the application from here.
-
+Contact: Tim Carlson <dotcarls@indiana.edu>
 
